@@ -4,7 +4,7 @@
 # shellscript file for condiotion
 # Author : sakshi 
 #date : 05/08/24
-#no. is divisible by 3 , no. should be divisible by 5 , and not divisible bye 9 
+#no.should be divisible by 3 , no. should be divisible by 5 , and not divisible bye 15 
 
 for i in {1..100};do
 
