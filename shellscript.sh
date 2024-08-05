@@ -1,18 +1,14 @@
 #!/bin/bash 
 
 
-# shellscript file for nodehealth check
+# shellscript file for condiotion
 # Author : sakshi 
-#date : 04/08/24
+#date : 05/08/24
+#no. is divisible by 3 , no. should be divisible by 5 , and not divisible bye 9 
 
-set -x #debaug mode 
+for i in {1..100};do
 
-set -e # error 
-
-nproc #cpu
-
-free -g # memory 
-
-df -h # disk 
-
-ps -ef |  grep sbin | awk -F" " '{print $2}'
+if ((i % 3 == 0  || i % 5 == 0 )) && ((i % 15 != 0 ));then 
+  echo $i 
+fi;  
+done 
